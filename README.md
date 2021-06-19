@@ -33,7 +33,7 @@ Using 'sunset.jpg' to convert...
 ```
 
 __Finder__
-<br>
+
 <img src="./example.png" width="400">
 
 
@@ -57,7 +57,7 @@ Using 'sunset.jpg' to convert...
 ```
 
 __Finder__
-<br>
+
 <img src="./example2.png" width="270">
 
 
