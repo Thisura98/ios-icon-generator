@@ -58,7 +58,7 @@ Using 'sunset.jpg' to convert...
 
 __Finder__
 
-<img src="./example2.png" width="270">
+<img src="./exampletwo.png" width="320">
 
 
 
