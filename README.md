@@ -1,7 +1,9 @@
 # iOS Icon Generator
 Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
 
-## Setup ## 
+
+
+### Setup ## 
 
 Makes the file executable and copies it to `/usr/local/bin` so it can be accessed from anywhere.
 
@@ -10,9 +12,11 @@ Makes the file executable and copies it to `/usr/local/bin` so it can be accesse
 3. `chmod +x igen`
 4. `cp igen /usr/local/bin/igen`
 
-## Usage Example 1 ##
 
-Use the default, `sunset.jpg` file in this repo.
+
+### Example 1
+
+Using the default, `sunset.jpg` file in this repo, generate its corresponding 1x, 2x and 3x images of the same name.
 
 __Command__
 ```
@@ -29,9 +33,14 @@ Using 'sunset.jpg' to convert...
 ```
 
 __Finder__
+<br>
 <img src="./example.png" width="400">
 
-## Usage Example 2 ##
+
+
+### Example 2
+
+Using the default, `sunset.jpg` file in this repo, generate 1x, 2x and 3x images with the initial name, `icon.jpg`, __the order matters__.
 
 __Command__
 ```
@@ -48,15 +57,20 @@ Using 'sunset.jpg' to convert...
 ```
 
 __Finder__
+<br>
 <img src="./example2.png" width="270">
 
-## Modifications ##
 
-Rename `igen` to `igen.sh` and make your edits.
+
+### Modifications 
+
+Rename `igen` to `igen.sh` and make your edits. The `igen` file is Shell Script.
 
 Pull requests are welcome.
 
-## Requirements (inbuilt in macOS) ##
+
+
+### Requirements (inbuilt in macOS)
 
 - [sips](https://ss64.com/osx/sips.html) - Scriptable Image Processing System
 - [bc](https://www.gnu.org/software/bc/manual/html_mono/bc.html) - Basic Calculator 
