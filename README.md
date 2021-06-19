@@ -1,4 +1,4 @@
-# ios-icon-generator
+# iOS Icon Generator
 Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
 
 ## How to use ## 
