@@ -1,9 +1,7 @@
 # iOS Icon Generator
 Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
 
-## How to use ## 
-
-#### Setup ####
+## Setup ## 
 
 Makes the file executable and copies it to `/usr/local/bin` so it can be accessed from anywhere.
 
@@ -12,12 +10,14 @@ Makes the file executable and copies it to `/usr/local/bin` so it can be accesse
 3. `chmod +x igen`
 4. `cp igen /usr/local/bin/igen`
 
-#### Usage 1 ####
+## Usage Example 1 ##
 
 Use the default, `sunset.jpg` file in this repo.
 
 __Command__
-`igen sunset.jpg`
+```
+igen sunset.jpg
+```
 
 __Output__
 ```
@@ -31,10 +31,12 @@ Using 'sunset.jpg' to convert...
 __Finder__
 <img src="./example.png" width="400">
 
-#### Usage 2 ####
+## Usage Example 2 ##
 
 __Command__
-`igen sunset.jpg icon.jpg`
+```
+igen sunset.jpg icon.jpg
+```
 
 __Output__
 ```
