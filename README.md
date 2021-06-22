@@ -1,6 +1,6 @@
 # iOS Icon Generator
 
-![./res/summary.png](Summary)
+![Summary](./res/summary.png)
 
 Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
 
