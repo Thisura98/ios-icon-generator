@@ -1,4 +1,7 @@
 # iOS Icon Generator
+
+![./res/summary.png](Summary)
+
 Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
 
 
@@ -34,7 +37,7 @@ Using 'sunset.jpg' to convert...
 
 __Finder__
 
-<img src="./example.png" width="400">
+<img src="./res/example.png" width="400">
 
 
 
@@ -58,7 +61,7 @@ Using 'sunset.jpg' to convert...
 
 __Finder__
 
-<img src="./exampletwo.png" width="320">
+<img src="./res/exampletwo.png" width="320">
 
 
 
