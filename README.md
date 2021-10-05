@@ -31,7 +31,7 @@ __Output__
 Using 'sunset.jpg' to convert...
 (3/3) Files Created Successfully!
 1. sunset.jpg = 300 x 300
-2. sunset@2x.jpg = 603.00 x 603.00
+2. sunset@2x.jpg = 600 x 600
 3. sunset@3x.jpg = 900 x 900
 ```
 
