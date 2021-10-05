@@ -17,12 +17,13 @@ HEIGHT=`sips -g pixelHeight ${FILE_PATH} | grep -o -E 'pixelHeight: (\d+)' | gre
 # echo "File size ${WIDTH}x${HEIGHT}"
 
 # USE bc - Basic Calculator for Arithmetic (Bash doesn't support Floating Point Arithmetic)
+#        - use SED to snip off floating point part
 
-W_1=`echo ${WIDTH}/3 | bc`
-H_1=`echo ${HEIGHT}/3 | bc`
+W_1=`echo ${WIDTH}/3 | bc | sed -E 's/\..+//'`
+H_1=`echo ${HEIGHT}/3 | bc | sed -E 's/\..+//'`
 
-W_2=`echo ${WIDTH}*0.67 | bc`
-H_2=`echo ${HEIGHT}*0.67 | bc`
+W_2=`echo ${WIDTH}*0.6667 | bc | sed -E 's/\..+//'`
+H_2=`echo ${HEIGHT}*0.6667 | bc | sed -E 's/\..+//'`
 
 # echo "Resolutions ${W_1}x${H_1} , ${W_2}x${H_2}"
 
