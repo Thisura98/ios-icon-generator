@@ -11,8 +11,8 @@ fi
 
 # echo "File Path '${FILE_PATH}'";
 
-WIDTH=`sips -g pixelWidth ${FILE_PATH} | grep -o -E '\d+'`
-HEIGHT=`sips -g pixelHeight ${FILE_PATH} | grep -o -E '\d+'`
+WIDTH=`sips -g pixelWidth ${FILE_PATH} | grep -o -E 'pixelWidth: (\d+)' | grep -o -E '\d+'`
+HEIGHT=`sips -g pixelHeight ${FILE_PATH} | grep -o -E 'pixelHeight: (\d+)' | grep -o -E '\d+'`
 
 # echo "File size ${WIDTH}x${HEIGHT}"
 
@@ -26,11 +26,13 @@ H_2=`echo ${HEIGHT}*0.67 | bc`
 
 # echo "Resolutions ${W_1}x${H_1} , ${W_2}x${H_2}"
 
+EXTENSION=`echo ${OUT_PATH} | grep -o -E '\.[^\.]+$'`
+
 # USE sed - Stream Editor for string replacing with regex s/<search pattern>/<replace string>/
 
 FILE_1=$OUT_PATH
-FILE_2=`echo ${OUT_PATH} | sed -E 's/\./@2x\./'`
-FILE_3=`echo ${OUT_PATH} | sed -E 's/\./@3x\./'`
+FILE_2=`echo ${OUT_PATH} | sed -E "s/\.[^\.]+$/@2x${EXTENSION}/"`
+FILE_3=`echo ${OUT_PATH} | sed -E "s/\.[^\.]+$/@3x${EXTENSION}/"`
 
 # echo "FILES ${FILE_1}, ${FILE_2}, ${FILE_3}"
 
