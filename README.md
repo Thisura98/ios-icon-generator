@@ -1,12 +1,10 @@
 # iOS Icon Generator
 
-![Summary](./res/summary.png)
+**Convert images to scaled iOS Assets in a flash (no dependencies required)!**
 
-Bash Script to Generate iOS Scaled Icons (1x, @2x, @3x)
+![Demonstration](./res/output3.gif)
 
-
-
-### Setup ## 
+### Installation
 
 Makes the file executable and copies it to `/usr/local/bin` so it can be accessed from anywhere.
 
@@ -16,34 +14,9 @@ Makes the file executable and copies it to `/usr/local/bin` so it can be accesse
 4. `cp igen /usr/local/bin/igen`
 
 
+### Example
 
-### Example 1
-
-Using the default, `sunset.jpg` file in this repo, generate its corresponding 1x, 2x and 3x images of the same name.
-
-__Command__
-```
-igen sunset.jpg
-```
-
-__Output__
-```
-Using 'sunset.jpg' to convert...
-(3/3) Files Created Successfully!
-1. sunset.jpg = 300 x 300
-2. sunset@2x.jpg = 600 x 600
-3. sunset@3x.jpg = 900 x 900
-```
-
-__Finder__
-
-<img src="./res/example.png" width="400">
-
-
-
-### Example 2
-
-Using the default, `sunset.jpg` file in this repo, generate 1x, 2x and 3x images with the initial name, `icon.jpg`, __the order matters__.
+Convert `sunset.jpg` file into `icon.jpg`, `icon@2x.jpg` & `icon@3x.jpg`.
 
 __Command__
 ```
@@ -59,13 +32,17 @@ Using 'sunset.jpg' to convert...
 3. icon@3x.jpg = 900 x 900
 ```
 
+__Note__
+
+Omit the second parameter (`icon.jpg`) to use the same name.
+
 __Finder__
 
 <img src="./res/exampletwo.png" width="320">
 
 
 
-### Modifications 
+### Contributions 
 
 Rename `igen` to `igen.sh` and make your edits. The `igen` file is Shell Script.
 
